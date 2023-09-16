@@ -1,0 +1,49 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.logo-link,
+.nav-link,
+.address-link {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.address-list {
+  font-style: normal;
+}
+
+.contakts-item:hover,
+.nav-link:hover,
+.address-link:hover,
+.nav-link:focus,
+.address-link:focus {
+  color: #404bbf;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: rgba(67, 68, 85, 1);
+  background-color: #ffffff;
+}
