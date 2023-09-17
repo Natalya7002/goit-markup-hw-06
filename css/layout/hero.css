@@ -1,10 +1,10 @@
-@media screen and (max-resolution: 192gpi) and (min-width: 767px),
+/* @media screen and (max-resolution: 192gpi) and (min-width: 767px),
   screen and (max-resolution: 2dppx) and (min-width: 767px),
   screen and (max-devise-pixel-ratio: 2) and (min-width: 767px) {
   .title-hero {
     background-image: url("./images/dark-mobil@2x.jpg");
-  }
-}
+  } */
+
 @media screen and (max-width: 767px) {
   .title-hero {
     margin: 0 auto;
@@ -67,7 +67,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/dark-tabl.jpg");
+      url("../imagges/dark-tabl.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -127,11 +127,8 @@
     margin: 0 auto;
     flex-shrink: 0;
     background: #2e2f42;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/people.jpg");
+    background-image: url(../images/people.jpg),
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
