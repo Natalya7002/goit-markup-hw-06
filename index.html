@@ -63,13 +63,13 @@
     </header> -->
 
     <main>
-      <!-- Section Hero -->
-       <!-- <section class="title-hero">
+      <!-- Section Hero  -->
+      <!-- <section class="title-hero">
         <div class="container title-container">
           <h1 class="title">Effective Solutions for Your Business</h1>
-          <button class="button" type="button" >Order Service</button>
+          <button class="button" type="button">Order Service</button>
         </div>
-      </section>  -->
+      </section> -->
 
       <!-- Section 2 -->
       <!-- <section class="contant">
@@ -139,14 +139,14 @@
 
       <!-- Section Our Team -->
 
-       <section class="aside-main">
+      <!-- <section class="aside-main">
         <div class="container">
           <h2 class="aside">Our Team</h2>
           <ul class="aside-list">
             <li class="aside-item">
-              <img
+              <img srcset="../images/ourteam/gerrera-img@2x.jpg 2x"
                 class="aside-pic"
-                src="./images/images-gerrera.jpg"
+                src="../images/ourteam/images-gerrera.jpg"
                 alt="Mark Guerrero"
                 width="264"
               />
@@ -186,9 +186,9 @@
               </div>
             </li>
             <li class="aside-item">
-              <img
+              <img srcset="../images/ourteam/ford-img@2x.jpg 2x"
                 class="aside-pic"
-                src="./images/images-ford.jpg"
+                src="./images/ourteam/images-ford.jpg"
                 alt="Tom Ford"
                 width="264"
               />
@@ -228,9 +228,9 @@
               </div>
             </li>
             <li class="aside-item">
-              <img
+              <img srcset="../images/ourteam/garcia-img@2x.jpg 2x"
                 class="aside-pic"
-                src="./images/images-garcia.jpg"
+                src="./images/ourteam/images-garcia.jpg"
                 alt="Camila Garcia"
                 width="264"
               />
@@ -270,9 +270,9 @@
               </div>
             </li>
             <li class="aside-item">
-              <img
+              <img srcset="../images/ourteam/wilson-img@2x.jpg 2x"
                 class="aside-pic"
-                src="./images/images-wilson.jpg"
+                src="./images/ourteam/images-wilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
               />
@@ -313,18 +313,27 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>  -->
 
       <!-- Section Portfolio -->
-      <!-- <section class="portfolio">
-        <div class="container">
+      <section class="portfolio">
+        <div class="container container-portfolio">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="portfolio-images">
                 <img
                   class="portfolio-pic"
-                  src="./images/images-bank.jpg"
+                  srcset="
+                    ./images/portpholio/images-bank.jpg          360w,
+                    ./images/portpholio/banking.img@2x.jpg       720w,
+                    ./images/portpholio/banking-tabl-img.jpg     356w,
+                    ./images/portpholio/banking-tabl-img@2x.jpg  712w,
+                    ./images/portpholio/banking-mobil-img.jpg    288w,
+                    ./images/portpholio/banking-mobil-img@2x.jpg 576w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/portpholio/banking-mobil-img.jpg"
                   alt="Banking App"
                   width="360"
                   height="300"
@@ -345,7 +354,16 @@
               <div class="portfolio-images">
                 <img
                   class="portfolio-pic"
-                  src="./images/images-cash.jpg"
+                  srcset="
+                    ./images/portpholio/images-cash.jpg           360w,
+                    ./images/portpholio/cashless-img@2x.jpg       720w,
+                    ./images/portpholio/cashless-tabl-img.jpg     356w,
+                    ./images/portpholio/cashless-tabl-img@2x.jpg  712w,
+                    ./images/portpholio/cashless-mobil-img.jpg    288w,
+                    ./images/portpholio/cashless-mobil-img@2x.jpg 576w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/portpholio/images-cash.jpg"
                   alt="Cashless Payment"
                   width="360"
                   height="300"
@@ -366,7 +384,16 @@
               <div class="portfolio-images">
                 <img
                   class="portfolio-pic"
-                  src="./images/images-meditation.jpg"
+                  srcset="
+                    ./images/portpholio/images-meditation.jpg        360w,
+                    ./images/portpholio/meditation-img@2x.jpg        720w,
+                    ./images/portpholio/meditation-tabl-img.jpg      356w,
+                    ./images/portpholio/meditation-tabl-img@2x.jpg   712w,
+                    ./images/portpholio/meditation-mobil-img.jpg     288w,
+                    ./images/portpholio/meditation-mobil-iimg@2x.jpg 576w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/portpholio/images-meditation.jpg"
                   alt="Meditation App"
                   width="360"
                   height="300"
@@ -387,7 +414,16 @@
               <div class="portfolio-images">
                 <img
                   class="portfolio-pic"
-                  src="./images/images-taxi.jpg"
+                  srcset="
+                    ./images/portpholio/images-taxi.jpg       360w,
+                    ./images/portpholio/taxi-img@2x.jpg       720w,
+                    ./images/portpholio/taxi-tabl-img.jpg     356w,
+                    ./images/portpholio/taxi-tabl-img@2x.jpg  712w,
+                    ./images/portpholio/taxi-mobil-img.jpg    288w,
+                    ./images/portpholio/taxi-mobil-img@2x.jpg 576w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./portpholio/taxi-mobil-img.jpg"
                   alt="Taxi Service"
                   width="360"
                   height="300"
@@ -408,7 +444,16 @@
               <div class="portfolio-images">
                 <img
                   class="portfolio-pic"
-                  src="./images/images-illustration.jpg"
+                  srcset="
+                    ./images/portpholio/images-illustration.jpg 360w,
+                    ./images/portpholio/skreen-img@2x.jpg       720w,
+                    ./images/portpholio/screen-tabl-img.jpg     356w,
+                    ./images/portpholio/screen-tabl-img@2x.jpg  712w,
+                    ./images/portpholio/screen-mobil-img.jpg    288w,
+                    ./images/portpholio/screen-mobil-img@2x.jpg 376w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/portpholio/screen-mobil-img.jpg"
                   alt="Screen Illustrations"
                   width="360"
                   height="300"
@@ -428,8 +473,17 @@
             <li class="portfolio-item">
               <div class="portfolio-images">
                 <img
+                  srcset="
+                    ./images/portpholio/images-courses.jpg      360w,
+                    ./images/portpholio/img@2x-min.jpg          720w,
+                    ./images/portpholio/courses-tabl-img.jpg    356w,
+                    ./images/portpholio/courses-tabl-img@2x.jpg 712w,
+                    ./images/portpholio/course-mobil-img.jpg    288w,
+                    ./images/portpholio/course-mobil-img@2x.jpg 576w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   class="portfolio-pic"
-                  src="./images/images-courses.jpg"
+                  src="./images/portpholio/images-courses.jpg"
                   alt="Online Courses"
                   width="360"
                   height="300"
@@ -449,7 +503,7 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
 
     <!-- Footer -->
     <!-- <footer class="footer">
@@ -623,15 +677,22 @@
     </div> -->
 
     <!--===== MOBILE-MENU ====== -->
-    <div class="mobile-menu" >
+    <div class="mobile-menu">
       <button class="mobile-menu-btn-enter">
-        <svg class="mobile-enter-close" width="8" height="8" aria-label="mobele menu enter">
+        <svg
+          class="mobile-enter-close"
+          width="8"
+          height="8"
+          aria-label="mobele menu enter"
+        >
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
       <ul class="mobile-contacts-nav">
         <li class="mobile-contakts-item">
-          <a class="mobile-nav-link nav-link-active" href="./index.html">Studio</a>
+          <a class="mobile-nav-link nav-link-active" href="./index.html"
+            >Studio</a
+          >
         </li>
         <li class="mobile-contakts-item">
           <a class="mobile-nav-link" href="">Portfolio</a>
