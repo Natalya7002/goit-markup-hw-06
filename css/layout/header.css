@@ -146,7 +146,7 @@
   color: #2e2f42;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .menu-mobil-btn {
     display: none;
   }
@@ -164,19 +164,56 @@
   .nav-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-  }
-  .page-header-nav {
+    align-items: baseline;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
   .contacts-nav {
-    position: relative;
     display: flex;
     align-items: center;
     gap: 40px;
+  }
+  .page-header-nav {
+    display: flex;
+    align-items: center;
+  }
+  .nav-link {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    padding: 24px 0;
+  }
+  .nav-link:hover,
+  .nav-link:focus {
+    color: var(--pressed-state);
+  }
+  .contacts-nav-active {
+    position: relative;
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav-link-active {
+    position: relative;
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-link-active::after {
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background-color: #404bbf;
+    border-radius: 2px;
   }
 
   .address-link {
@@ -192,41 +229,23 @@
     flex-direction: column;
     gap: 12px;
   }
-  .logo-link:hover,
-  .logo-link:focus {
-    color: #404bbf;
-  }
-  .nav-link {
-    display: block;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    padding: 24px 0;
-  }
-
-  .nav-link {
-    position: relative;
-    color: #404bbf;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .nav-link::after {
-    display: block;
-    width: 100%;
-    height: 4px;
-    margin-left: auto;
-    margin-right: auto;
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    background-color: #404bbf;
-    border-radius: 2px;
-  }
 }
 
 @media screen and (min-width: 1158px) {
+  .menu-mobil-btn {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    position: relative;
+  }
   .page-header {
     border-bottom: 1px;
     border-bottom: 1px solid #e7e9fc;
@@ -235,11 +254,9 @@
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   }
-
-  .nav-container {
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-    position: relative;
+  .page-header-nav {
+    display: flex;
+    align-items: center;
   }
 
   .logo-link {
@@ -248,9 +265,10 @@
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    /* color: #4d5ae5; */
     margin-right: 76px;
     text-transform: uppercase;
-    /* color: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #404bbf;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -268,7 +286,14 @@
     color: #2e2f42;
     padding: 24px 0;
   }
-
+  .contacts-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  /* .nav-link.active {
+    border-bottom: 4px solid rgba(64, 75, 191, 1);
+  } */
   .contacts-nav-active {
     position: relative;
     color: #404bbf;
@@ -308,28 +333,9 @@
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-
-  .contacts-nav {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-  }
-
-  .page-header-nav {
-    display: flex;
-    align-items: center;
-  }
-
   .address-link-item {
     display: flex;
-    flex-direction: row;
     align-items: last baseline;
     gap: 40px;
-  }
-
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
   }
 }

@@ -101,9 +101,9 @@
   .aside-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 24px;
     column-gap: 24px;
+    row-gap: 48px;
+    padding-left: 92px;
   }
   .name-aside {
     width: 232px;
