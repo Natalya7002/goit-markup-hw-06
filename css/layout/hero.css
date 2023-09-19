@@ -24,6 +24,8 @@
 
 @media screen and (max-width: 767px) {
   .title-hero {
+    padding-top: 72px;
+    padding-bottom: 72px;
     margin: 0 auto;
     background-color: #2e2f42;
     background-image: linear-gradient(
@@ -37,8 +39,6 @@
   }
 
   .title-container {
-    padding-top: 72px;
-    padding-bottom: 72px;
     display: flex;
     flex-direction: column;
     gap: 72px;
